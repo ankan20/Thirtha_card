@@ -1,0 +1,101 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #E8CBC0; 
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: linear-gradient(to right, #636FA4, #E8CBC0);  */
+    background: linear-gradient(to bottom right, #333333, #666666, #999999);
+    gap: 10px;
+}
+#heding{
+    position: absolute;
+    top: 30px;
+    color: whitesmoke;
+}
+/* .img-profile{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/014/385/591/small/esport-gaming-logo-design-png.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    
+} */
+.img-profile {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/014/385/591/small/esport-gaming-logo-design-png.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 5px rgba(233, 217, 217, 0.5);
+  }
+  
+  .img-profile::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: spinBorder 4s linear infinite;
+  }
+  
+  @keyframes spinBorder {
+    0% {
+      transform: rotate(0deg);
+      border: 2px solid transparent;
+    }
+    100% {
+      transform: rotate(360deg);
+      border: 2px solid whitesmoke;
+    }
+  }
+  
+.text h3{
+    color: whitesmoke;
+    font-size: xx-large;
+
+}
+.lnk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+.lnk-prf{
+    height: 50px;
+    width: 80vw;
+    border: 2px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    gap: 20px;
+    box-shadow: 0 0 10px 5px rgba(233, 217, 217, 0.5);
+}
+
+
+  
